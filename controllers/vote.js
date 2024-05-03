@@ -19,6 +19,7 @@ async function voteRouteController(req, res) {
       res.setHeader("Content-Type", "application/json");
       res.end(JSON.stringify(newRating.sort((a, b) => b.rating - a.rating)));
     } catch (error) {
+      console.log(error);
       res.statusCode = 500;
       res.end("Internal Server Error");
     }
