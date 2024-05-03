@@ -1,7 +1,4 @@
 const http = require("http");
-const staticFile = require("./appModules/http-utils/static-file");
-const path = require("path");
-const mimeTypes = require("./appModules/http-utils/mime-types");
 const mainRouteController = require("./controllers/main");
 const defaultRouteController = require("./controllers/default");
 const gameRouteController = require("./controllers/game");
